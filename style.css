@@ -1,0 +1,166 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: hsl(27, 66%, 92%);
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .overview {
+    background: hsl(10, 79%, 65%);
+    padding: 15px 27px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    width: 350px;
+  }
+  .container .overview .price {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .overview .circle img{
+    width: 65px;
+  }
+  .container .overview .price span {
+    color: white;
+  }
+  .container .overview .price span:first-child {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .container .overview .price span:last-child {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .container .chart {
+    background: white;
+    width: 350px;
+    padding: 15px 27px;
+    border-radius: 15px;
+  }
+  .container .chart .head {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+  .container .chart .head h2 {
+    font-size: 20px;
+    color: hsl(25, 47%, 15%);
+  }
+  .container .chart .bodys {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: baseline;
+  }
+  .container .chart .bodys .body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .container .chart .bodys .body:hover p {
+    display: block;
+  }
+  .container .chart .bodys .body:hover div {
+    opacity: 0.5;
+  }
+  .container .chart .bodys .body div {
+    width: 30px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: hsl(10, 79%, 65%);
+    margin-top: 30px;
+  }
+  .container .chart .bodys .body:nth-child(2) div {
+    height: 90px;
+  }
+  .container .chart .bodys .body:nth-child(3) div {
+    height: 150px;
+    background-color: lightblue;
+  }
+  .container .chart .bodys .body:nth-child(4) div {
+    height: 80px;
+  }
+  .container .chart .bodys .body:nth-child(5) div {
+    height: 60px;
+  }
+  .container .chart .bodys .body:nth-child(6) div {
+    height: 120px;
+  }
+  .container .chart .bodys .body:nth-child(7) div {
+    height: 65px;
+  }
+  .container .chart .bodys .body p {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    margin-left: -5px;
+    display: none;
+  }
+  .container .chart .bodys .body span {
+    margin: 10px 0;
+    color: hsl(28, 10%, 53%);
+    font-size: 13px;
+    opacity: 0.6;
+    text-align: center;
+  }
+  hr {
+    background: hsl(27, 66%, 92%);
+    border: 1px solid hsl(27, 66%, 92%);
+  }
+  .container .below {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .container .below .this-month {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .below .this-month span:first-child {
+    color: hsl(28, 10%, 53%);
+    font-size: 12px;
+    opacity: 0.6;
+  }
+  .container .below .this-month span:last-child {
+    color: hsl(25, 47%, 15%);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 7px;
+  }
+  .container .below .last-month {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+  .container .below .last-month span:first-child {
+    color: hsl(25, 47%, 15%);
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .container .below .last-month span:last-child {
+    color: hsl(28, 10%, 53%);
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 7px;
+  }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+      
+    }
